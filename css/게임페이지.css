@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+body{
+    width: 1470px;
+    height: 1470px;
+}
+
+/* 네비게이터 */
+
+.navcontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 1470px;
+    height: 180px;
+    background-color: black;
+}
+
+/* 네비게이터 왼 */
+
+.navcontainer > .nav-left{
+    display: block;
+    width: 10%;
+}
+
+.nav-left > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+a > img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* 네비게이터 중앙 */
+
+.navcontainer > .nav-center{
+    display: flex;
+    width: 67%;
+}
+
+.nav-center div{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    color: white;
+}
+
+.nav-center > div > a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.nav-certer-icon{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.a> a:hover{
+    background-color: grey;
+    border-bottom: 4px solid blue;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+
+/* 네비게이터 오른 */
+
+.navcontainer > .nav-right{
+    display: flex;
+    justify-content: flex-end;
+    width: 23%;
+}
+
+.nav-right > div{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.nav-right > div:last-child{
+    width: 30%;
+    margin: 0px 20px;
+}
+
+.nav-right > div:not(.c){
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right> div> a{
+    color: white;
+}
+
+.c{
+    background-color: gray;
+}
